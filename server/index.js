@@ -1,3 +1,5 @@
+console.log('XYEK')
+
 require('dotenv').config()
 const express = require('express')
 
