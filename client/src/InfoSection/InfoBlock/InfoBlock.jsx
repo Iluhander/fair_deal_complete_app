@@ -16,7 +16,7 @@ const InfoBlock = (props) => {
         <div className='infoBlock' style={{background: props.background}}>
             <hr/>
             <p className='pStyle' onClick={changeDisplay} style={{cursor:'pointer'}}>{props.text}</p>
-            <p className='pStyle' style={{display: display}}>Абракабэбра</p>
+            <p className='pStyle' style={{display: display, textAlign: 'center'}}>Команда Fair Deal выступает третьей стороной в договоре, лично контролируя выполнение его условий.</p>
             <hr/>
         </div>
     );
