@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.blured {
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-name: blurAnimation;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+.unblured {
+  animation-duration: 1s;
+  animation-direction: reverse;
+  animation-name: blurAnimation;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+}
+
+@keyframes blurAnimation {
+  from {
+    filter:blur(0px);
+    -webkit-filter:blur(0px);
+  }
+
+  to {
+    filter:blur(10px);
+    -webkit-filter:blur(10px);
+  }
+}
