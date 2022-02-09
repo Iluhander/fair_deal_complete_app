@@ -1,0 +1,30 @@
+.infoBlock {
+    position: relative;
+
+    width: 80%;
+    min-width: 540px;
+    height: 240px;
+    backdrop-filter: blur(1px) brightness(1.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pStyle {
+    position: relative;
+
+    font-family: 'Karla', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: #191921;
+}
+
+hr {
+    height: 1px;
+    width: 400px;
+
+    background-color: whitesmoke;
+    opacity: 0.33;
+}

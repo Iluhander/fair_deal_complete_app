@@ -1,0 +1,15 @@
+.infoSection {
+    position: relative;
+    top: 120px;
+
+    height: 400px;
+    width: 100%;
+    min-width: 900px;
+    background: url("../../public/background1.png");
+    background-size: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

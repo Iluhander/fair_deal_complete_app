@@ -1,0 +1,17 @@
+.menuButton {
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.bar {
+    position: relative;
+
+    border-radius: 6px;
+    background-color: rgba(116,116,149,0.36);
+    width: 40px;
+    height: 3px;
+}
