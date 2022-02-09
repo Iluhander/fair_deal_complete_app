@@ -16,8 +16,8 @@ app.get('/manifest.json', function(req, res) {
     res.sendFile(path.join(__dirname,'/../client/build/manifest.json'))
 });
 
-app.get('/static/js/main.f5dc9d9b.js', function(req, res) {
-    res.sendFile(path.join(__dirname,'/../client/build/static/js/main.f5dc9d9b.js'))
+app.get('/static/js/main.0f56e352.js', function(req, res) {
+    res.sendFile(path.join(__dirname,'/../client/build/static/js/main.0f56e352.js'))
 });
 
 app.get('/static/css/main.f13d7f65.css', function(req, res) {
