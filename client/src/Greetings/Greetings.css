@@ -6,16 +6,9 @@
     top: 0;
     left: 0;
     background-color: #191921;
-
-    display: flex;
-    align-items: center;
-    flex-direction: row;
 }
 
 .logo {
-    position: absolute;
-    left: calc(50% - 84px);
-
     color: whitesmoke;
     font-family: 'Orelega One';
     font-size: 45px;

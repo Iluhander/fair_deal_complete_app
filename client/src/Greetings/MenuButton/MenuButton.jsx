@@ -3,7 +3,7 @@ import './MenuButton.css';
 
 const MenuButton = (props) => {
     return (
-        <div style={{position:'relative', left: '5%'}}>
+        <div style={{position:'relative', top:'34px'}}>
             <div className='menuButton' onClick={props.changeVisibility}>
                 <div className='bar'></div>
                 <div className='bar'></div>
