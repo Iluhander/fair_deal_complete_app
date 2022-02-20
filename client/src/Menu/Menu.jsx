@@ -23,7 +23,9 @@ const Menu = (props) => {
     return (
         <div className='menu' style={{display:display}}>
             <div>
-                <p className='menuP'>Здесь будут ссылки</p>
+                <p className='menuP'>Заключить сделку</p>
+                <p className='menuP'>О нас</p>
+                <p className='menuP'>Контакты</p>
             </div>
         </div>
     );
