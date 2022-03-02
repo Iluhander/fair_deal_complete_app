@@ -11,6 +11,17 @@
 .logo {
     color: whitesmoke;
     font-family: 'Orelega One';
-    font-size: 45px;
     font-weight: bold;
+}
+
+@media (max-width: 639px) {
+    .logo {
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 640px) {
+    .logo {
+        font-size: 45px;
+    }
 }
