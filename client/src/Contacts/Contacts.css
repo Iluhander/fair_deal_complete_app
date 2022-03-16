@@ -25,3 +25,20 @@
     align-items: center;
     justify-content: center;
 }
+
+.contactLogo {
+    width: 90px;
+    height: 90px;
+
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vk {
+    background-image: url("../../public/vk.png");
+}
+
+.telegram {
+    background-image: url("../../public/telegram.png");
+}
