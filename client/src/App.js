@@ -5,6 +5,7 @@ import TextBlock from "./TextBlock/TextBlock";
 import Basement from "./Basement/Basement";
 import Menu, {changeMenuVisibility} from "./Menu/Menu";
 import {useState} from "react";
+import Contacts from "./Contacts/Contacts";
 
 function App() {
   const [contentClass, setContentClass] = useState('');
@@ -28,6 +29,7 @@ function App() {
               <TextBlock h1='Сделки с Fair Deal - это безопасно' p='Fair Deal - сервис, помогающий не терять деньги, товар и драгоценное время на мошенников, обеспечивая выполнение всех условий любой онлайн сделки как для заказчика (покупателя), так и для исполнителя (продавца).
     ' button='Совершите сделку с нами'/>
               <InfoSection/>
+              <Contacts/>
               <Basement/>
           </div>
       </div>
