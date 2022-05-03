@@ -1,0 +1,65 @@
+@media (min-width: 740px) {
+    .infoBlock {
+        height: 700px;
+        flex-direction: row;
+    }
+
+    .leftBlock, .rightBlock {
+        height: 480px;
+        text-align: left;
+        opacity: 86%;
+    }
+
+    .leftBlock {
+        width: 600px;
+    }
+
+    .rightBlock {
+        width: 400px;
+    }
+
+    .leftBlock span {
+        font-size: 60px;
+    }
+
+    .leftBlock h1 {
+        font-size: 54px;
+    }
+
+    .leftBlock p, .rightBlock p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 739px) {
+    .infoBlock {
+        height: 740px;
+        flex-direction: column;
+    }
+
+    .leftBlock, .rightBlock {
+        width: 500px;
+        text-align: center;
+        opacity: 96%;
+    }
+
+    .leftBlock {
+        height: 380px;
+    }
+
+    .rightBlock {
+        height: 240px;
+    }
+
+    .leftBlock span {
+        font-size: 54px;
+    }
+
+    .leftBlock h1 {
+        font-size: 48px;
+    }
+
+    .leftBlock p, .rightBlock p {
+        font-size: 18px;
+    }
+}

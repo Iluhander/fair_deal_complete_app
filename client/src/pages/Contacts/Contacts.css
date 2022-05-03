@@ -1,0 +1,32 @@
+.contacts {
+    width: 100%;
+    height: 100vh;
+
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemsRow {
+    width: 80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+
+.media {
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+
+@media (min-width: 740px) {
+    .itemsRow {
+        height: 300px;
+    }
+}

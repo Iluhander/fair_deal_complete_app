@@ -1,0 +1,31 @@
+.footer {
+    width: 100%;
+    height: 180px;
+    background-color: rgba(13,13,13,0.86);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerElem {
+    width: 300px;
+    height: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    color:white;
+    font-family: "Orelega One";
+}
+
+.signature {
+    width: 120px;
+    height: 110px;
+
+    background: url("../../public/Signature_white.png") center;
+    background-size: cover;
+}

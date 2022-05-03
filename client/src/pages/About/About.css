@@ -1,0 +1,70 @@
+.descriptionBlock {
+    width: 100%;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descriptionBlock div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    font-family: "Orelega One";
+    font-size: 18px;
+}
+
+.avatar {
+    position: relative;
+    width: 80px;
+    border-radius: 50px;
+}
+
+.textBlock {
+    background: rgba(255,165,0,0.62);
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.buttonsBlock {
+    width: 100%;
+    height: 120px;
+    background: black;
+
+    display: block;
+}
+
+.buttonsBlock button {
+    width: 50%;
+    height: 120px;
+
+    font-family: "Orelega One";
+    font-size: 20px;
+
+    border: none;
+}
+
+@media (min-width: 740px) {
+    .descriptionBlock {
+        height:100vh;
+        flex-direction: row;
+    }
+
+    .descriptionBlock div {
+        height: 400px;
+    }
+}
+
+@media (max-width: 739px) {
+    .descriptionBlock {
+        height:130vh;
+        flex-direction: column;
+    }
+
+    .descriptionBlock div {
+        height: 280px;
+    }
+}

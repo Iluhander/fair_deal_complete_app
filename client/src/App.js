@@ -1,38 +1,23 @@
 import './App.css';
-import Greetings from "./Greetings/Greetings";
-import InfoSection from "./InfoSection/InfoSection";
-import TextBlock from "./TextBlock/TextBlock";
-import Basement from "./Basement/Basement";
-import Menu, {changeMenuVisibility} from "./Menu/Menu";
-import {useState} from "react";
-import Contacts from "./Contacts/Contacts";
+import Navbar from "./Navbar/Navbar";
+import Main from "./pages/Main/Main";
+import Footer from "./Footer/Footer";
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
+import About from "./pages/About/About";
+import Contacts from "./pages/Contacts/Contacts.";
 
 function App() {
-  const [contentClass, setContentClass] = useState('');
-  const [animationIterations, setAnimationIterations] = useState(1);
-
-  function changeBlur() {
-    if (contentClass !== 'blured') {
-      setContentClass('blured');
-    } else {
-      setContentClass('unblured');
-    }
-
-    setAnimationIterations(animationIterations + 1);
-  }
-
   return (
-      <div style={{display:'flex', flexDirection:'column', alignItems:'center'}}>
-          <Greetings changeVisibility={changeMenuVisibility}/>
-          <Menu changeVisibility={changeMenuVisibility} changeBlur={changeBlur}/>
-          <div className={contentClass}>
-              <TextBlock h1='Сделки с Fair Deal - это безопасно' p='Fair Deal - сервис, помогающий не терять деньги, товар и драгоценное время на мошенников, обеспечивая выполнение всех условий любой онлайн сделки как для заказчика (покупателя), так и для исполнителя (продавца).
-    ' button='Совершите сделку с нами'/>
-              <InfoSection/>
-              <Contacts/>
-              <Basement/>
-          </div>
-      </div>
+      <Router>
+          <Navbar/>
+          <Routes>
+              <Route exact path='/' exact element={<Main/>}/>
+              <Route path='/about' element={<About/>}/>
+              <Route path='/contacts' element={<Contacts/>}/>
+          </Routes>
+          <Footer/>
+      </Router>
   );
 }
 
