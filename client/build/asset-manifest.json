@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.1058fe65.css",
-    "main.js": "/static/js/main.575c5def.js",
+    "main.css": "/static/css/main.677c065c.css",
+    "main.js": "/static/js/main.15bdfb0f.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/Signature_white.png": "/static/media/Signature_white.11db179645a5cfa68ad3.png",
     "static/media/entrepreneur.jpg": "/static/media/entrepreneur.972befb6ceba7f7980c3.jpg",
     "index.html": "/index.html",
-    "main.1058fe65.css.map": "/static/css/main.1058fe65.css.map",
-    "main.575c5def.js.map": "/static/js/main.575c5def.js.map",
+    "main.677c065c.css.map": "/static/css/main.677c065c.css.map",
+    "main.15bdfb0f.js.map": "/static/js/main.15bdfb0f.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1058fe65.css",
-    "static/js/main.575c5def.js"
+    "static/css/main.677c065c.css",
+    "static/js/main.15bdfb0f.js"
   ]
 }

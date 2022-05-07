@@ -46,8 +46,10 @@ const Main = () => {
                                         <div style={{width: '80%'}}>
                                             <p style={{fontSize: '22px'}}>
                                                 Наша команда выступает третьей стороной в каждой сделке,
-                                                контролируя передачу денег и товаров. Такой подход исключает
-                                                любой обман.
+                                                контролируя передачу денег и товаров.<br/><br/>Такой подход
+                                                <span> </span>
+                                                <span style={{fontSize:'22px', textDecoration:'underline'}}>исключает
+                                                любой обман</span>.
                                             </p>
                                         </div>
                                     </div>
@@ -69,13 +71,17 @@ const Main = () => {
                              style={{background: 'rgba(227,192,171,0.86)'}}>
                             <div style={{width: '80%'}}>
                                 <p style={{fontSize: '22px'}}>
-                                    <span style={{fontWeight:'bold', fontSize:'24px'}}>Это очень просто)</span>
+                                    <span style={{fontWeight:'bold', fontSize:'26px'}}>Это очень просто)</span>
                                     <br/><br/>
-                                    Для начала вам потребуется зарегестрироваться (ссылка в меню сверху).
+                                    Для начала вам потребуется зарегистрироваться (ссылка в меню сверху).
                                     После вам откроется личный кабинет и вы в два клика сможете согласовать с
                                     нами покупку.
                                 </p>
-                                <a><button>Присоединиться</button></a>
+                                <a href="/enter">
+                                    <button style={{cursor:'pointer', fontSize:'20px'}}>
+                                        Присоединиться
+                                    </button>
+                                </a>
                             </div>
                         </div>
                 }

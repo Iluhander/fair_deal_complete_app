@@ -1,0 +1,32 @@
+.accountHeader {
+    position: absolute;
+    width:80%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    z-index: 2;
+}
+
+.accountHeader p {
+    font-family: "Orelega One";
+    font-size: 18px;
+}
+
+.accountHeader p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.accountHeader a {
+    text-decoration: none;
+}
+
+.svetlana {
+    background: url("../../../../public/people/svetlana.png") center;
+    background-size: cover;
+    border-radius: 50px;
+    border: 2px outset rgba(154,154,154,0.82);
+}

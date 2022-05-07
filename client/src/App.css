@@ -3,3 +3,23 @@
     background-size: cover;
     border-radius: 2px;
 }
+
+.highlighted {
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+.dot {
+    position: relative;
+
+    width: 6px !important;
+    height: 6px;
+
+    left: calc(50% - 3px);
+
+    background-color: black;
+
+    border-radius: 50px;
+
+    box-shadow: 0 0 5px rgba(154,154,154,0.82);
+}

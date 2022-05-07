@@ -5,6 +5,7 @@ const Contacts = () => {
     return (
         <div>
             <div className="contacts">
+                <h1>Свяжитесь с <span style={{color:'orange'}}>нами</span></h1>
                 <div className="itemsRow">
                     <a href="https://vk.com/suns_tears">
                         <div className="media"

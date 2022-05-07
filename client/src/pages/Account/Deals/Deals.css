@@ -1,0 +1,56 @@
+.dealsList {
+    position: relative;
+
+    width: 100%;
+    border-bottom: 60px solid white;
+
+    display: block;
+}
+
+.deal {
+    position: relative;
+    margin-top: 20px;
+
+    width: 100%;
+
+    border: 1px solid black;
+    box-shadow: 0 0 3px rgba(171,171,171,0.82);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+
+    font-family: "Orelega One";
+    font-size: 18px;
+}
+
+.deal:hover {
+    box-shadow: 0 0 4px rgba(255,165,0,0.82);
+    cursor: pointer;
+}
+
+.addDealBlock {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.addDealBlock div {
+    background: url("../../../../public/icons/plus.png") center;
+    background-size: cover;
+
+    width: 52px;
+    height: 52px;
+
+    cursor: pointer;
+}
+
+@media (max-height: 390px) {
+    .deal {
+        height: 70px;
+    }
+}
