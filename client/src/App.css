@@ -23,3 +23,17 @@
 
     box-shadow: 0 0 5px rgba(154,154,154,0.82);
 }
+
+.cross {
+    position: relative;
+
+    background: url("../public/icons/cross.png") center;
+    background-size: cover;
+
+    width: 10px;
+    height: 10px;
+}
+
+.cross:hover {
+    cursor: pointer;
+}

@@ -1,2 +1,4 @@
+server/.env
+client/.env
 .idea
 server/node_modules

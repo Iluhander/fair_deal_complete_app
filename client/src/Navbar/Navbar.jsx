@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './Navbar.css';
+import {isAuthorised} from "../network/userAPI";
 
 const Navbar = () => {
     // Links on the left side of the navbar.
@@ -20,7 +21,7 @@ const Navbar = () => {
     let rightLinks = [
         {
             ref: "/enter",
-            text: "Войти",
+            text: "Личный кабинет",
             key: "2"
         }
     ];

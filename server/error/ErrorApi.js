@@ -12,6 +12,10 @@ class ErrorApi extends Error {
     static forbidden(message) {
         return new ErrorApi(403, message);
     }
+
+    static conflict(message) {
+        return new ErrorApi(409, message);
+    }
 }
 
 module.exports = ErrorApi;

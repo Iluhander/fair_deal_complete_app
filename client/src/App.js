@@ -1,33 +1,22 @@
 import './App.css';
+import './Forms.css';
+import {BrowserRouter as Router, Routes, Route, Navigate}
+    from 'react-router-dom';
+import {useContext} from "react";
 import Navbar from "./Navbar/Navbar";
 import Main from "./pages/Main/Main";
 import Footer from "./Footer/Footer";
-import { BrowserRouter as Router, Routes, Route}
-    from 'react-router-dom';
 import About from "./pages/About/About";
 import Contacts from "./pages/Contacts/Contacts.";
 import Enter from "./pages/Enter/Enter";
 import Header from "./pages/Account/Header/Header";
-import Deals from "./pages/Account/Deals/Deals";
+import DealsList from "./pages/Account/Deals/DealsList";
 import Settings from "./pages/Account/Settings/Settings";
 import Chats from "./pages/Account/Chats/Chats";
+import CreateDeal from "./pages/Account/Deals/CreateDeal/CreateDeal";
+import Deal from "./pages/Account/Deals/Deal/Deal";
 
 function App() {
-    let deals = [
-        {
-            name: "Iphone 11 gold",
-            status: "На проверке у Fair Deal",
-            statusColor: 'orange',
-            key: "1"
-        },
-        {
-            name: "Радиатор",
-            status: "Средства переведены",
-            statusColor: 'green',
-            key: "2"
-        }
-    ];
-
     let chats = [
         {
             name: "Андей Полосков",
@@ -47,7 +36,7 @@ function App() {
             status: "",
             key: "chat_2"
         }
-    ]
+    ];
 
     function getBasicPage(component) {
         return (
@@ -65,7 +54,7 @@ function App() {
                 <Header currentPage={page}/>
                 {component}
             </div>
-        )
+        );
     }
 
     return (
@@ -75,7 +64,9 @@ function App() {
                 <Route path='/about' element={getBasicPage(<About/>)}/>
                 <Route path='/contacts' element={getBasicPage(<Contacts/>)}/>
                 <Route path='/enter' element={getBasicPage(<Enter/>)}/>
-                <Route path='/deals' element={getAccountPage(<Deals deals={deals}/>, 1)}/>
+                <Route path='/deals' element={getAccountPage(<DealsList/>, 1)}/>
+                <Route path='/deals/new_deal' element={getAccountPage(<CreateDeal/>)}/>
+                <Route path='/deals/deal' element={getAccountPage(<Deal/>)}/>
                 <Route path='/chats' element={getAccountPage(<Chats chats={chats}/>, 2)}/>
                 <Route path='/settings' element={getAccountPage(<Settings/>, 3)}/>
             </Routes>

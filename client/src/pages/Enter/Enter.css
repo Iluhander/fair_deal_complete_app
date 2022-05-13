@@ -3,7 +3,7 @@
     top: 30px;
     left: calc(50% - 30vw);
     width: 60vw;
-    height: 500px;
+    height: 560px;
 
     display: flex;
     align-items: center;
@@ -50,4 +50,11 @@
     text-decoration-color: rgba(171,171,171,0.82);
 
     cursor: pointer;
+}
+
+.apiResponseError {
+    font-size: 16px;
+    color:red;
+
+    text-align: center;
 }
